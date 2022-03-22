@@ -117,9 +117,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="Oyc-6F-7s7" kind="show" id="7Ts-z2-XA2"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -128,6 +125,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="OzL-eI-lkl"/>
+                    <connections>
+                        <segue destination="Oyc-6F-7s7" kind="show" id="dRC-Ot-pMr"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7lo-4f-jyS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -136,7 +136,7 @@
         <!--DetTVC-->
         <scene sceneID="lfF-dY-Rj6">
             <objects>
-                <viewController id="Oyc-6F-7s7" customClass="DetTVC" customModule="TabBar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="DetTVC" storyboardIdentifier="DetTVC" id="Oyc-6F-7s7" customClass="DetTVC" customModule="TabBar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2IC-SZ-FQc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
