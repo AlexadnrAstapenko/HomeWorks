@@ -8,33 +8,16 @@
 import UIKit
 
 class DetTVC: UIViewController {
-    @IBOutlet weak var phoneNumber: UILabel!
-    @IBOutlet weak var emailAdd: UILabel!
-    
+    @IBOutlet var phoneNumber: UILabel!
+    @IBOutlet var emailAdd: UILabel!
 
-    var email = ""
-    var phone = ""
-    var newTitle = ""
-    
+    var person: Person!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = newTitle
+        navigationItem.title = person.firstNames + " " + person.lastNames
         self.navigationController?.navigationBar.prefersLargeTitles = false
-        phoneNumber.text = phone
-        emailAdd.text = email
+        phoneNumber.text = person.phoneNumbers
+        emailAdd.text = person.emails
     }
-    
-    
 }
-
-
-/*
- // MARK: - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
- // Get the new view controller using segue.destination.
- // Pass the selected object to the new view controller.
- }
- */
-
